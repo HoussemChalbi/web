@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Web</title>  
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="mystyles.css"/>
+    <style>
+        /* Reset styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Navigation styles */
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo a {
+            font-family: 'Pacifico', cursive;
+            font-size: 24px;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+        }
+
+        ul li {
+            margin-left: 20px;
+        }
+
+        ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Header styles */
+        header {
+            background-image: url('images/IMG_20200730_193418.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+            padding: 0 20px;
+        }
+
+        .header-content {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .header-subtitle {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .header-title {
+            font-size: 48px;
+            margin-bottom: 20px;
+            font-family: 'Pacifico', cursive;
+        }
+
+        /* Page content styles */
+        .page-content {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .about-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 0 auto;
+            max-width: 400px;
+        }
+
+        .about-card h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        .line {
+            display: block;
+            width: 50px;
+            height: 2px;
+            background-color: #333;
+            margin: 15px auto;
+        }
+
+        .bio {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        .footer-t {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footer-right {
+            margin-top: 10px;
+        }
+
+        .footer-right a {
+            color: #fff;
+            margin-left: 10px;
+        }
+
+        .footer-left p {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .footer-left p:last-child {
+            margin-bottom: 0;
+        }
+
+        .footer-t button {
+            background-color: #09a0cd;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .footer-t button:hover {
+            background-color: #007a99;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="menu">
+            <div class="logo">
+                <a href="#">Development Web</a>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="parcours.html">Parcours Académique</a></li>
+                <li><a href="comp_matiers.html">Matiers & Compétences</a></li>
+                <li><a href="quiz.html">Quizz</a></li>
+            </ul>
+        </div>
+    </nav>
+    <header>
+        <div class="header-content">
+            <h4 class="header-subtitle">Hi! Je m'appelle</h4>
+            <h1 class="header-title">Houssem Chalbi</h1>
+        </div>
+    </header>
+    <section class="page-content">
+        <div class="col-lg-4 about-card">
+            <h3 class="font-weight-light">Who am I ?</h3>
+            <span class="line"></span>
+            <h5 class="mb-3">Technicien supérieur en électronique industrielle / Futur ingénieur Informatique</h5>
+            <p class="bio">Houssem Chalbi est un étudiant en Génie Informatique. Né le 08/07/2000, il a grandi à Sfax et a développé une passion pour les jeux vidéos et la musique électronique dès son plus jeune âge. Diplômé en électronique industrielle à l'ISET Sousse.</p>
+            <a href="contact.html">
+                <button>Contactez-moi</button>
+            </a>
+        </div>
+    </section>
+    <footer class="footer-t">
+        <div class="footer-right">
+            <a href="https://www.facebook.com/profile.php?id=100006343959512"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.linkedin.com/in/houssem-chalbi-81007925a/"><i class="fa fa-linkedin"></i></a>
+        </div>
+        <div class="footer-left">
+            <p>Houssem Chalbi</p>
+        </div>
+    </footer>
+</body>
+</html>
